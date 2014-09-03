@@ -1,0 +1,1 @@
+To view folder in Git so that it is not empty
