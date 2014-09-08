@@ -1,4 +1,5 @@
-<?php/*
+<?php
+/*
 	Jessee Torres
     September 3, 2014
     Purpose: Duplicate Truth Table
@@ -16,7 +17,7 @@
 	//Echo out a heading
 	echo "<h1> Truth Table </h1>";
 	?>
- <table width="200" border="1">
+ <table width="400" border="1">
   <tbody>
     <tr>
          <th>X</th>
@@ -46,6 +47,9 @@
 		echo"<td>".(!$x?"T":"F")."</td>";
 		echo"<td>".(!$y?"T":"F")."</td>";
 		echo"<td>".($x&&$y?"T":"F")."</td>";
+		echo"<td>".($x||$y?"T":"F")."</td>";
+		echo"<td>".($x^$y?"T":"F")."</td>";
+		echo"<td>".($x^$y?^$z?"T":"F")."</td>";
 		?>
         </tr><tr>
         <?php
