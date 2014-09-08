@@ -78,29 +78,51 @@
 		echo"<td>".(!$x||!$y?"T":"F")."</td>";
 		echo"<td>".(!($x||$y)?"T":"F")."</td>";
 		echo"<td>".(!($x||$y)?"T":"F")."</td>";
-			/*QUESTION: I do not know how to write out the  
-			correct code for !$x&&!$y I try but there is an 
-			error or it comes out as true. I used Demorgans 
-			Law to cheat and write the string.
+			/*CORRECT: add correct code for the last variable
 			*/
 		?>
         </tr><tr>
         </tr><tr>
-        </tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
+        <?php
+		$x=false;
+		$y=true;
+		echo"<td>".($x?"T":"F")."</td>";
+		echo"<td>".($y?"T":"F")."</td>";
+		echo"<td>".(!$x?"T":"F")."</td>";
+		echo"<td>".(!$y?"T":"F")."</td>";
+		echo"<td>".($x&&$y?"T":"F")."</td>";
+		echo"<td>".($x||$y?"T":"F")."</td>";
+		echo"<td>".($x^$y?"T":"F")."</td>";
+		echo"<td>".($x^$y^$y?"T":"F")."</td>";
+		echo"<td>".($x^$y^$x?"T":"F")."</td>";
+		echo"<td>".(!($x&&$y)?"T":"F")."</td>";
+		echo"<td>".(!$x||!$y?"T":"F")."</td>";
+		echo"<td>".(!($x||$y)?"T":"F")."</td>";
+		echo"<td>".(!($x||$y)?"T":"F")."</td>";
+			/*CORRECT: add correct code for the last variable
+			*/
+		?>
+        </tr><tr>
+        <?php
+		$x=false;
+		$y=false;
+		echo"<td>".($x?"T":"F")."</td>";
+		echo"<td>".($y?"T":"F")."</td>";
+		echo"<td>".(!$x?"T":"F")."</td>";
+		echo"<td>".(!$y?"T":"F")."</td>";
+		echo"<td>".($x&&$y?"T":"F")."</td>";
+		echo"<td>".($x||$y?"T":"F")."</td>";
+		echo"<td>".($x^$y?"T":"F")."</td>";
+		echo"<td>".($x^$y^$y?"T":"F")."</td>";
+		echo"<td>".($x^$y^$x?"T":"F")."</td>";
+		echo"<td>".(!($x&&$y)?"T":"F")."</td>";
+		echo"<td>".(!$x||!$y?"T":"F")."</td>";
+		echo"<td>".(!($x||$y)?"T":"F")."</td>";
+		echo"<td>".(!($x||$y)?"T":"F")."</td>";
+			/*CORRECT: add correct code for the last variable
+			*/
+		?>
+       </tr>
   </tbody>
 </table>
 
