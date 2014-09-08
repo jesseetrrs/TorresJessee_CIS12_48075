@@ -1,8 +1,8 @@
 <?php
 /*
 	Jessee Torres
-    September 3, 2014
-    Purpose: Duplicate Truth Table
+    Sept 3rd, 2014
+    Purpose:  Duplicate Truth Table
 */
 ?>
 <!doctype html>
@@ -17,7 +17,7 @@
 	//Echo out a heading
 	echo "<h1> Truth Table </h1>";
 	?>
- <table width="400" border="1">
+ <table width="450" border="1">
   <tbody>
     <tr>
          <th>X</th>
@@ -36,7 +36,7 @@
     	 
     </tr>
 	
-    <table width="200" border="1">
+    <table width="550" border="1">
   <tbody>
     <tr>
     	<?php
@@ -49,7 +49,17 @@
 		echo"<td>".($x&&$y?"T":"F")."</td>";
 		echo"<td>".($x||$y?"T":"F")."</td>";
 		echo"<td>".($x^$y?"T":"F")."</td>";
-		echo"<td>".($x^$y?^$z?"T":"F")."</td>";
+		echo"<td>".($x^$y^$y?"T":"F")."</td>";
+		echo"<td>".($x^$y^$x?"T":"F")."</td>";
+		echo"<td>".(!($x&&$y)?"T":"F")."</td>";
+		echo"<td>".(!$x||!$y?"T":"F")."</td>";
+		echo"<td>".(!($x||$y)?"T":"F")."</td>";
+		echo"<td>".(!($x||$y)?"T":"F")."</td>";
+			/*QUESTION: I do not know how to write out the  
+			correct code for !$x&&!$y I try but there is an 
+			error or it comes out as true. I used Demorgans 
+			Law to cheat and write the string.
+			*/
 		?>
         </tr><tr>
         <?php
@@ -60,6 +70,19 @@
 		echo"<td>".(!$x?"T":"F")."</td>";
 		echo"<td>".(!$y?"T":"F")."</td>";
 		echo"<td>".($x&&$y?"T":"F")."</td>";
+		echo"<td>".($x||$y?"T":"F")."</td>";
+		echo"<td>".($x^$y?"T":"F")."</td>";
+		echo"<td>".($x^$y^$y?"T":"F")."</td>";
+		echo"<td>".($x^$y^$x?"T":"F")."</td>";
+		echo"<td>".(!($x&&$y)?"T":"F")."</td>";
+		echo"<td>".(!$x||!$y?"T":"F")."</td>";
+		echo"<td>".(!($x||$y)?"T":"F")."</td>";
+		echo"<td>".(!($x||$y)?"T":"F")."</td>";
+			/*QUESTION: I do not know how to write out the  
+			correct code for !$x&&!$y I try but there is an 
+			error or it comes out as true. I used Demorgans 
+			Law to cheat and write the string.
+			*/
 		?>
         </tr><tr>
         </tr><tr>
