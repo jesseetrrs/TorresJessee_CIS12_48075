@@ -21,10 +21,8 @@
 			($score>=80)?'B':(
 			($score>=70)?'C':(
 			($score>=60)?'D':'F')));
-			
-		
-	
-	//Output the Results
+		//Paranthesis needed because it should be written as one line of code notice semicoloncat end of F
+		//Output the Results
 	echo "<h1>A score of $score = $grade</h1>";
 	
 ?>
