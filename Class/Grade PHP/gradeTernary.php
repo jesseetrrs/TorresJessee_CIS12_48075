@@ -17,10 +17,10 @@
 	//Initliaze the input
 	$score=rand(50,100);
 	//Determine the grade
-	$grade=($score>=90)?'A':
-			($score>=80)?'B':
-			($score>=70)?'C':
-			($score>=60)?'D':'F';
+	$grade=($score>=90)?'A':(
+			($score>=80)?'B':(
+			($score>=70)?'C':(
+			($score>=60)?'D':'F')));
 			
 		
 	
