@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Numbers</title>
+<title>Quotes</title>
 </head>
 
 <body>
