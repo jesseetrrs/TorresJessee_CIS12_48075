@@ -21,7 +21,7 @@ $author = $first_name.' ' .
 $last_name;
 
 $book = 'The Girls\' Guide to Hunting
-anf Fishing';
+and Fishing';
 
 //Print the values:
 echo "<p>The book <em>$book</em>
