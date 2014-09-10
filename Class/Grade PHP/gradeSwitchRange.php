@@ -9,25 +9,21 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Grade If Else</title>
+<title>Grade Switch</title>
 </head>
 <body>
 <?php
 	//Initliaze the input
 	$score=rand(50,100);
 	//Determine the grade
-	if($score>=90){
-		$grade='A';
-	} else if ($score>=80){
-		$grade='B';
-	}else if ($score>=70) {
-		$grade='C';
-	}else if ($score>=60) {
-		$grade='D';
-	}else{
-		$grade='F';
+	switch(true){
+		case $score>=90:$grade='A'; break;
+		case $score>=80:$grade='B'; break;
+		case $score>=70:$grade='C';break;
+		case $score>=60:$grade='D';break;
+		default:		$grade='F';break;
+	
 	}
-//One block of code.Last "else" is the default.
 //Output the Results
 echo "<h1>A score of $score = $grade</h1>";
 ?>

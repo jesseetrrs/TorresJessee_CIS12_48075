@@ -33,7 +33,7 @@
 			}
 	}
 	
-//Output the Results
+//Output the Results. Works in every other lanaguage. Break means break out and compute. "Nested". Need break because if statements do it automatically, but switch stsatements you have to tell it to where and when.
 echo "<h1>A score of $score = $grade</h1>";
 ?>
 </body>

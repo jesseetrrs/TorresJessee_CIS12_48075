@@ -33,12 +33,10 @@
 		
 	if($score<60){
 		$grade='F';
-	
-	
+	}
 		
 	//Output the Results
 	echo "<h1>A score of $score = $grade</h1>";
-	//Also comes with flowchart
 ?>
 
 </body>
