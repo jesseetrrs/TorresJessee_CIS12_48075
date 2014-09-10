@@ -14,7 +14,9 @@
 
 <body>
 <?php
-	//Initliaze the input
+	//Initliaze the input and declare variables;
+	$score=rand(50,100);
+	$grade='';
 	$score=95;
 	//Determine the grade
 	if($score>=90){
@@ -31,6 +33,8 @@
 		
 	if($score<60){
 		$grade='F';
+	
+	
 		
 	//Output the Results
 	echo "<h1>A score of $score = $grade</h1>";
