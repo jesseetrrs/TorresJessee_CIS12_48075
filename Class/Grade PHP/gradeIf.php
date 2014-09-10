@@ -25,7 +25,7 @@
 	if($score<60)$grade='F';
 	//Output the Results
 	echo "<h1>A score of $score = $grade</h1>";
-	//Also comes with flowchart
+	//Also comes with flowchart. This one takes longer because it has to run more tests. It is independent. Tests that are DEPENDENT are more efficient.
 ?>
 
 </body>

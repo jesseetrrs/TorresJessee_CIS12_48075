@@ -29,6 +29,7 @@
 	}
 //One block of code.Last "else" is the default.
 //Output the Results
+//Only testing range once. More efficient.
 echo "<h1>A score of $score = $grade</h1>";
 ?>
 </body>
