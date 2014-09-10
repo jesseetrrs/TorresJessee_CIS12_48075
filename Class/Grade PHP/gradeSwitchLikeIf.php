@@ -29,8 +29,12 @@
 			default:
 	}
 	switch ($score>=60&&$score<70) {
-			case true: $grade='D'; break;
+			case true: $grade='D'; 
 			default:$grade='F';
+	}
+	switch ($score<60) {
+			case true: $grade='F'; 
+			default:
 	}
 	
 //Output the Results
