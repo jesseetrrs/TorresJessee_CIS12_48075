@@ -15,7 +15,7 @@
 <body>
 <?php
 	//Utilize the built in capabilities of PHP to grab information passed from a form
-	$score=$_GET['score'];
+	$score=(int)$_GET['score'];
 	//Determine the grade
 	$grade=($score>=90)?'A':(
 			($score>=80)?'B':(
